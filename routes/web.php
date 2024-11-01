@@ -1,7 +1,7 @@
 <?php
 
 use App\Solutions\ExceptionWithSolution;
-use App\Solutions\ExceptionWithSolutionNote;
+use App\Solutions\ExceptionWithSolutionNotes;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -12,3 +12,6 @@ Route::get('/custom', function () {
     throw new ExceptionWithSolution();
 });
 
+Route::get('/custom-with-notes', function () {
+    throw new ExceptionWithSolutionNotes();
+});
