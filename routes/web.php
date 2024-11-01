@@ -1,5 +1,6 @@
 <?php
 
+use App\Solutions\ExceptionWithRunnable;
 use App\Solutions\ExceptionWithSolution;
 use App\Solutions\ExceptionWithSolutionNotes;
 use Illuminate\Support\Facades\Route;
@@ -18,4 +19,8 @@ Route::get('/custom-with-notes', function () {
 
 Route::get('/custom-solution-provider', function () {
     return 100/0;
+});
+
+Route::get('/runnable-solution', function () {
+    throw new ExceptionWithRunnable();
 });
