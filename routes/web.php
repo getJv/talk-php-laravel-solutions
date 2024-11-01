@@ -15,3 +15,7 @@ Route::get('/custom', function () {
 Route::get('/custom-with-notes', function () {
     throw new ExceptionWithSolutionNotes();
 });
+
+Route::get('/custom-solution-provider', function () {
+    return 100/0;
+});

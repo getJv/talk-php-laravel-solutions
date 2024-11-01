@@ -24,6 +24,7 @@ return [
         'php',
         'laravel',
         // your solution provider classes
+        \App\Providers\CustomSolutionProvider::class,
     ],
 
     /*
