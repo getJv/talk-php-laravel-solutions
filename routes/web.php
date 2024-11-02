@@ -24,3 +24,7 @@ Route::get('/custom-solution-provider', function () {
 Route::get('/runnable-solution', function () {
     throw new ExceptionWithRunnable();
 });
+
+Route::get('/ai-solution', function () {
+    throw new \App\Solutions\ExceptionWithAi("We cant fint the word 'potato'. Review your regex.");
+});
