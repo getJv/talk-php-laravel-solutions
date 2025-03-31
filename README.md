@@ -1,6 +1,8 @@
 # talk-php-laravel-solutions
 
-This is a project to use as example in my talk with a study of spatie/laravels-erro-solutons
+This is a project to use as an example in my talk with a study of spatie/laravels-erro-solutons
+
+* [Local ollama-server](https://github.com/getJv/my-ollama)
 
 ## Presentation link:
 
